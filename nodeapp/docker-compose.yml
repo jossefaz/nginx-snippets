@@ -1,0 +1,30 @@
+version: '3'
+services : 
+    app1 :
+      build :
+        context: .
+      ports : 
+        - '7575:3000'
+      environment :
+        - APPID=2222
+    app2 :
+      build :
+        context: .
+      ports : 
+        - '7576:3000'
+      environment :
+        - APPID=3333
+    app3 :
+      build :
+        context: .
+      ports : 
+        - '7577:3000'
+      environment :
+        - APPID=4444
+    app4 :
+      build :
+        context: .
+      ports : 
+        - '7578:3000'
+      environment :
+        - APPID=5555
